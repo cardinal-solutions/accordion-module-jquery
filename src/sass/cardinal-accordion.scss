@@ -1,0 +1,78 @@
+//----------
+//Colors
+//----------
+$darkgray: #787276;
+$mediumgray: #dcdcdc;
+$lightgray: #f5f5f5;
+
+$backgroundcolor: $mediumgray;
+
+$sub-baseline: 6px;
+$baseline: $sub-baseline*4;
+
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+
+.accordion {
+	background-color: $mediumgray;
+	
+
+	&-action {
+		position: absolute;
+			top: $baseline/2;
+			right: $baseline/2;
+		[data-state="active"] & {
+		
+		}
+		[data-state="inactive"] & {
+
+		}	
+	}
+	&-title,
+	&-content {
+		padding: $baseline/2;
+		position: relative;
+	}
+	&-title {
+		background:$darkgray;
+		height: $baseline*2;
+
+		& strong{
+		
+		}
+
+		[data-state="active"] & {
+
+		}
+		[data-state="inactive"] & {
+
+		}
+	}
+
+	&-content {
+		background: $mediumgray;
+		overflow: hidden;
+		// height: auto;
+		transition: color 350s;
+		&[data-state="active"] {
+			color: rgba(black,1);
+			// -webkit-transition: all 1s;
+			// transition: all 1s;
+		}
+		&[data-state="inactive"] {
+			color: rgba(black,0);
+			// height: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			// -webkit-transition: all 1s;
+			// transition: all 1s;
+		}
+	}
+}

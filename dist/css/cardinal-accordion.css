@@ -1,0 +1,30 @@
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+.accordion {
+  background-color: #dcdcdc; }
+  .accordion-action {
+    position: absolute;
+    top: 12px;
+    right: 12px; }
+  .accordion-title, .accordion-content {
+    padding: 12px;
+    position: relative; }
+  .accordion-title {
+    background: #787276;
+    height: 48px; }
+  .accordion-content {
+    background: #dcdcdc;
+    overflow: hidden;
+    transition: color 350s; }
+    .accordion-content[data-state="active"] {
+      color: black; }
+    .accordion-content[data-state="inactive"] {
+      color: transparent;
+      padding-top: 0;
+      padding-bottom: 0; }
+
+/*# sourceMappingURL=cardinal-accordion.css.map */

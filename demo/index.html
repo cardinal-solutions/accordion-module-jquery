@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Accordion Plugin</title>
+		<link rel="stylesheet" type="text/css" href="../dist/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../dist/css/cardinal-accordion.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.cardinal.accordion.js"></script>
+
+		<script>
+			$(function() {
+				$(".accordion").accordion();
+			});
+		</script>
+	</head>
+	<body>
+		<dl class="accordion">
+			<dt class="accordion-title" data-state="active">
+				<strong>Title 1</strong>
+				<button class="accordion-action">Open</button>
+			</dt>
+			<dd class="accordion-content" data-state="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, urna a rutrum lacinia, ligula ligula fermentum mi, sit amet suscipit sapien arcu non libero. Donec malesuada, eros aliquam lobortis ullamcorper, nibh leo tincidunt mi, sed efficitur tellus est non dui. Morbi ultrices diam metus, lacinia mattis justo ornare nec. Nulla consequat nisl velit, vel laoreet sapien pulvinar a. Donec odio ipsum, tincidunt et massa quis, imperdiet scelerisque neque. Quisque mi dolor, vehicula varius elit eu, consequat efficitur est. Nam eu placerat nisi. Phasellus faucibus enim a lacus ornare auctor. Vivamus et purus purus. Nullam nisl libero, aliquet id aliquet a, vehicula id odio. Vivamus dapibus odio eu dui vulputate, nec dignissim erat porttitor. Fusce viverra nec erat nec molest`ie.</dd>
+			<dt class="accordion-title" data-state="active">
+				<strong>Title 2</strong>
+				<button class="accordion-action">Open</button>
+			</dt>
+			<dd class="accordion-content" data-state="active">Some text</dd>
+			<dt class="accordion-title" data-state="active">
+				<strong>Title 3</strong>
+				<button class="accordion-action">Open</button>
+			</dt>
+			<dd class="accordion-content" data-state="active">some text</dd>
+		</dl>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+	</body>
+</html>
